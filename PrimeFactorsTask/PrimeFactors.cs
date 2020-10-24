@@ -11,7 +11,7 @@ namespace PrimeFactorsTask
         /// </summary>
         /// <param name="number">Source number.</param>
         /// <returns>Prime factors of a given natural number.</returns>
-        /// <exception cref="ArgumentOutOfRangeException">Thrown when number less or equal 0.</exception>
+        /// <exception cref="ArgumentException">Thrown when number less or equal 0.</exception>
         /// <example>
         /// 60 => {2, 2, 3, 5}
         /// 8 => {2, 2, 2}
