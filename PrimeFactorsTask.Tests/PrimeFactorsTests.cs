@@ -14,7 +14,7 @@ namespace PrimeFactorsTask.Tests
         [TestCase(12, ExpectedResult = new[] { 2, 2, 3 })]
         [TestCase(901255, ExpectedResult = new[] { 5, 17, 23, 461 })]
         [TestCase(342324, ExpectedResult = new[] { 2, 2, 3, 3, 37, 257 })]
-        public int[] GetFactors_ReturnsPrimeFactors(long number)
+        public int[] GetFactors_ReturnsPrimeFactors(int number)
         {
             return PrimeFactors.GetFactors(number);
         }
@@ -22,7 +22,7 @@ namespace PrimeFactorsTask.Tests
         [TestCase(-100)]
         [TestCase(-1)]
         [TestCase(0)]
-        public void GetFactors_IfNumberLessOrEqualsZero_ThrowArgumentException(long number)
+        public void GetFactors_IfNumberLessOrEqualsZero_ThrowArgumentException(int number)
             => Assert.Throws<ArgumentException>(
                 () => PrimeFactors.GetFactors(number), $"{number} cannot be less or equals zero.");
     }
