@@ -19,7 +19,7 @@ namespace PrimeFactorsTask
         /// 901255 => {5, 17, 23, 461}
         /// 93819012551 => {11, 9539, 894119}
         /// </example>
-        public static int[] GetFactors(long number)
+        public static int[] GetFactors(int number)
         {
             throw new NotImplementedException("You need to implement this method.");
         }
